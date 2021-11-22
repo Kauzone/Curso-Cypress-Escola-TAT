@@ -1,9 +1,3 @@
-/*Cypress.on('uncaught:exception', (err, runnable) => {
-    // returning false here prevents Cypress from
-    // failing the test
-    return false
-  })*/
-
 describe("Tickets", () => {
     beforeEach(() => cy.visit('https://ticket-box.s3.eu-central-1.amazonaws.com/index.html'));
  //it.only = testar apenas essa informação
@@ -91,7 +85,6 @@ const fullName = `${firstName} ${lastName}`
     });
 
 //Criar comandos customizados
-
     it("fills mandatory fills using support command", () => {
         const customer = {
             firstName: "John",
